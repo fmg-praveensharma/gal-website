@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/Navbar/NavBar";
 import heroImg from "../images/ram0.png";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -24,24 +25,43 @@ const Hero = () => {
               data-aos="zoom-in"
               data-aos-delay="200"
             >
-              <h1 className="mb-5 md:text-5xl text-3xl font-bold text-blue-900">
+              <h1
+                className="mb-5 pb-5 md:text-5xl text-4xl font-bold 
+             bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 
+             bg-clip-text text-transparent"
+              >
                 Transforming Businesses with Cutting-Edge VR & AR
               </h1>
-              <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">
+
+              <div
+                className="text-xl font-semibold tracking-tight mb-5 
+                bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 
+                bg-clip-text text-transparent"
+              >
                 Golden Arc Labs excels in integrating state-of-the-art VR
                 technology, including spatial computing and realistic rendering,
                 to deliver seamless, immersive virtual experiences. Our
                 expertise ensures each project meets the highest standards of
                 realism and user engagement.
               </div>
-              <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
+
+              {/* <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
                 <Link
                   to="/contact"
-                  className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0"
+                  className="relative overflow-hidden text-white bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-600 
+               hover:from-yellow-600 hover:to-amber-700 
+               inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg 
+               font-bold tracking-wider uppercase rounded-2xl sm:w-auto sm:mb-0 
+               shadow-md transition-all duration-300 ease-in-out transform 
+               hover:scale-105 hover:shadow-amber-600/30 
+               outline-none focus:ring-0 before:absolute before:-inset-1 
+               before:bg-gradient-to-r from-amber-800 to-yellow-700 
+               before:blur-md before:opacity-20 before:-z-10 
+               border border-amber-700 hover:border-yellow-600"
                 >
-                  Learn more
+                  ⚡ Learn More ⚡
                   <svg
-                    className="w-4 h-4 ml-1"
+                    className="w-5 h-5 ml-2 transition-transform duration-300 transform group-hover:translate-x-1"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
@@ -53,7 +73,7 @@ const Hero = () => {
                     ></path>
                   </svg>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <div
               className="flex justify-center w-full lg:w-1/2"
@@ -63,7 +83,8 @@ const Hero = () => {
               <img
                 alt="card img"
                 className="rounded-t float-right duration-1000 w-auto h-auto 
-                   max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+               max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 
+               animate-wiggle"
                 src={heroImg}
               />
             </div>

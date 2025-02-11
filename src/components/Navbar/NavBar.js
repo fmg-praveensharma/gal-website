@@ -20,20 +20,24 @@ const NavBar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${
-        !top && "bg-white shadow-lg"
+        !top && "bg-black shadow-lg"
       }`}
     >
-      <div className="flex flex-row justify-between items-center py-2">
+      <div className="flex flex-row justify-around md:justify-between items-center py-2">
         <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
           <HashLink smooth to="/#hero">
-            <h1 className="font-extrabold text-4xl text-blue-900">
-              Golden Arc labs
+            <h1
+              className={`font-extrabold text-4xl bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent ${
+                !top && "from-gray-900 via-gray-700 to-gray-500"
+              }`}
+            >
+              Golden Arc Labs
             </h1>
           </HashLink>
         </div>
         <div className="group flex flex-col items-center">
           <button
-            className="p-2 rounded-lg lg:hidden text-blue-900"
+            className="p-2 rounded-lg lg:hidden text-white"
             onClick={handleClick}
           >
             <svg
