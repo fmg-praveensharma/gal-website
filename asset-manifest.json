@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ramg-website/static/css/main.a78e88ea.css",
+    "main.js": "/ramg-website/static/js/main.cacab7b4.js",
+    "static/media/ram0.png": "/ramg-website/static/media/ram0.485f47dbed97e244a73c.png",
+    "static/media/ram3.jpg": "/ramg-website/static/media/ram3.bad6fc4df2d912150288.jpg",
+    "static/media/ram1.jpg": "/ramg-website/static/media/ram1.5e5b7c6dac9600cf5107.jpg",
+    "static/media/ram2.jpg": "/ramg-website/static/media/ram2.4e7fc2a1b81c8bb3d0e0.jpg",
+    "static/media/ram5.jpg": "/ramg-website/static/media/ram5.1c1c287315a302dd3c9c.jpg",
+    "static/media/ram6.jpg": "/ramg-website/static/media/ram6.e3636386021777b9c6f1.jpg",
+    "static/media/kws.png": "/ramg-website/static/media/kws.877da8110793af2c3d27.png",
+    "static/media/footer.svg": "/ramg-website/static/media/footer.70b54bbe52a797ce69c1.svg",
+    "index.html": "/ramg-website/index.html",
+    "static/media/hero-bg.svg": "/ramg-website/static/media/hero-bg.c3b4448a16ff1a8da834.svg",
+    "main.a78e88ea.css.map": "/ramg-website/static/css/main.a78e88ea.css.map",
+    "main.cacab7b4.js.map": "/ramg-website/static/js/main.cacab7b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a78e88ea.css",
+    "static/js/main.cacab7b4.js"
+  ]
+}
