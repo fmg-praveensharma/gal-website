@@ -6,24 +6,24 @@ import img4 from "../images/ram2.jpg";
 
 const Services = () => {
   return (
-    <div id="services" className="bg-gray-100 py-12">
+    <div id="services" className="services bg-gray-100 py-12">
       <section data-aos="zoom-in-down">
         <div className="my-4 py-4">
-          <h2 className="my-2 text-center text-3xl text-blue-900 uppercase font-bold">
+          <h2 className="my-2 text-center text-3xl bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent mb-4 uppercase font-bold">
             services
           </h2>
 
-          <div className="flex justify-center">
-            <div className="w-24 border-b-4 border-blue-900"></div>
-          </div>
-          <h2 className="mt-4 mx-12 text-center text-xl lg:text-2xl font-semibold text-blue-900">
+          {/* <div className="flex justify-center">
+            <div className="w-24 border-b-4 border-yellow-500"></div>
+          </div> */}
+          <h2 className="mt-4 mx-12 text-center text-xl lg:text-2xl font-semibold text-white">
             We are deeply committed to the growth and success of our clients.
           </h2>
         </div>
 
         <div className="px-12" data-aos="fade-down" data-aos-delay="600">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+            <div className="bg-gray-800 transition-all ease-in-out duration-400  overflow-hidden text-white hover:text-black hover:bg-white  rounded-lg shadow-2xl p-3 group">
               <div className="m-2 text-justify text-sm">
                 <img
                   alt="card img"
@@ -39,7 +39,8 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+            {/* <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group"> */}
+            <div className="bg-gray-800 transition-all ease-in-out duration-400  overflow-hidden text-white hover:text-black hover:bg-white  rounded-lg shadow-2xl p-3 group">
               <div className="m-2 text-justify text-sm">
                 <img
                   alt="card img"
@@ -56,7 +57,8 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+            {/* <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group"> */}
+            <div className="bg-gray-800 transition-all ease-in-out duration-400  overflow-hidden text-white hover:text-black hover:bg-white  rounded-lg shadow-2xl p-3 group">
               <div className="m-2 text-justify text-sm">
                 <img
                   alt="card img"
@@ -72,7 +74,8 @@ const Services = () => {
               </div>
             </div>
 
-            <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
+            {/* <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group"> */}
+            <div className="bg-gray-800 transition-all ease-in-out duration-400  overflow-hidden text-white hover:text-black hover:bg-white  rounded-lg shadow-2xl p-3 group">
               <div className="m-2 text-justify text-sm">
                 <img
                   alt="card img"
@@ -99,7 +102,7 @@ const Services = () => {
             data-aos="zoom-out"
           >
             <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
-              <div className="text-blue-900 mb-4">
+              <div className="text-white mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="72"
@@ -111,14 +114,15 @@ const Services = () => {
                   <path d="M12 7.462c-2.502 0-4.538 2.036-4.538 4.538S9.498 16.538 12 16.538s4.538-2.036 4.538-4.538S14.502 7.462 12 7.462zm0 7.076c-1.399 0-2.538-1.139-2.538-2.538S10.601 9.462 12 9.462s2.538 1.139 2.538 2.538-1.139 2.538-2.538 2.538z"></path>
                 </svg>
               </div>
-              <h3
-                className="text-3xl  text-blue-900 
-                            font-bold"
-              >
+              <h3 className="text-3xl bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent font-bold">
                 We <span className="font-black">Build</span>
               </h3>
               <div>
-                <p className="my-3 text-xl text-gray-600 font-semibold">
+                <p
+                  className="my-3 text-xl font-semibold tracking-tight mb-5 
+                bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 
+                bg-clip-text text-transparent"
+                >
                   With over 10 years experience in software analysis and design
                   and a deep understanding of the latest IT trends and
                   solutions, we provide customized recommendations and
@@ -128,7 +132,7 @@ const Services = () => {
               </div>
             </div>
             <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
-              <div className="text-blue-900 mb-4">
+              <div className="text-white mb-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="72"
@@ -139,11 +143,15 @@ const Services = () => {
                   <path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z"></path>
                 </svg>
               </div>
-              <h3 className="text-3xl  text-blue-900 font-bold">
+              <h3 className="text-3xl bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent font-bold">
                 We <span className="font-black">Collaborate</span>
               </h3>
               <div>
-                <p className="my-3 text-xl text-gray-600 font-semibold">
+                <p
+                  className="my-3 text-xl font-semibold tracking-tight mb-5 
+                bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 
+                bg-clip-text text-transparent"
+                >
                   We can collaborate with your existing tech team to scale
                   existing software applications or design customized software
                   applications that suits your everyday need and simplifies

@@ -27,7 +27,7 @@ const Hero = () => {
             >
               <h1
                 className="mb-5 pb-5 md:text-5xl text-4xl font-bold 
-             bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 
+             bg-gradient-to-b from-gray-200 via-gray-400 to-gray-600 
              bg-clip-text text-transparent"
               >
                 Transforming Businesses with Cutting-Edge VR & AR

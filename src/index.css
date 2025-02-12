@@ -24,8 +24,22 @@ body {
   background-size: cover;
 }
 
+.services {
+  background: radial-gradient(circle, #1a0d00 15%, #0e0600 40%, #000000 80%);
+  background-size: cover;
+}
+
 .footer {
-  background: url(./images/footer.svg) top center no-repeat;
+  /* background: url(./images/footer.svg) top center no-repeat; */
+  background: radial-gradient(circle, #1a0d00 15%, #0e0600 40%, #000000 80%);
+
+  background-size: cover;
+}
+
+.contact {
+  /* background: url(./images/footer.svg) top center no-repeat; */
+  background: radial-gradient(circle, #1a0d00 15%, #0e0600 40%, #000000 80%);
+
   background-size: cover;
 }
 

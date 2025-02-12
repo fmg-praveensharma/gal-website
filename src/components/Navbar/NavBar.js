@@ -27,9 +27,7 @@ const NavBar = () => {
         <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
           <HashLink smooth to="/#hero">
             <h1
-              className={`font-extrabold text-4xl bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent ${
-                !top && "from-gray-900 via-gray-700 to-gray-500"
-              }`}
+              className={`font-extrabold text-4xl bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent `}
             >
               Golden Arc Labs
             </h1>
@@ -65,7 +63,7 @@ const NavBar = () => {
           </div>
 
           <div
-            className={`fixed transition-transform duration-300 ease-in-out transit flex justify-center left-0 w-full h-auto rounded-md p-24 bg-white lg:hidden shadow-xl top-14 ${
+            className={`fixed transition-transform duration-300 ease-in-out transit flex justify-center left-0 w-full h-auto rounded-md p-8 bg-black lg:hidden shadow-xl top-14 ${
               isOpen ? "block" : "hidden"
             } `}
           >
