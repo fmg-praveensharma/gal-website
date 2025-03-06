@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import NavLinks from "../Navbar/NavLinks";
 import { HashLink } from "react-router-hash-link";
+import logoImage from "../../images/logo.png";
 
 const NavBar = () => {
   const [top, setTop] = useState(!window.scrollY);
@@ -19,18 +20,25 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${
-        !top && "bg-black shadow-lg"
-      }`}
+      className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top && "bg-black shadow-lg"
+        }`}
     >
       <div className="flex flex-row justify-around md:justify-between items-center py-2">
         <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
           <HashLink smooth to="/#hero">
-            <h1
-              className={`font-extrabold text-4xl bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent `}
-            >
-              Golden Arc Labs
-            </h1>
+            <div className="flex flex-row justify-center items-center gap-x-5 pt-6">
+              <img
+                alt="card img"
+                className="rounded-t w-16 h-16"
+                src={logoImage}
+              />
+              <h1
+                className={`font-extrabold text-4xl text-white `}
+              >
+                Golden Arc Labs
+              </h1>
+            </div>
+
           </HashLink>
         </div>
         <div className="group flex flex-col items-center">
@@ -63,9 +71,8 @@ const NavBar = () => {
           </div>
 
           <div
-            className={`fixed transition-transform duration-300 ease-in-out transit flex justify-center left-0 w-full h-auto rounded-md p-8 bg-black lg:hidden shadow-xl top-14 ${
-              isOpen ? "block" : "hidden"
-            } `}
+            className={`fixed transition-transform duration-300 ease-in-out transit flex justify-center left-0 w-full h-auto rounded-md p-8 bg-black lg:hidden shadow-xl top-14 ${isOpen ? "block" : "hidden"
+              } `}
           >
             <div className="flex flex-col space-y-6">
               <NavLinks />
