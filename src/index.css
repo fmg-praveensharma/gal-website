@@ -25,7 +25,8 @@ body {
 }
 
 .about {
-  background: radial-gradient(circle, #1a0d00 15%, #0e0600 40%, #000000 80%);
+  background: radial-gradient(circle, #000000 10%, #0f172a 40%, #1e293b 80%);
+  /* background: radial-gradient(circle, #1a0d00 15%, #0e0600 40%, #000000 80%); */
   background-size: cover;
 }
 
