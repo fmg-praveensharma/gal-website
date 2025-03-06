@@ -6,14 +6,14 @@ import { Link } from "react-router-dom";
 const Intro = () => {
   return (
     <>
-      <div className="about m-auto p-2 md:p-12 h-5/6 bg-white" id="about">
-        <div className="flex flex-col-reverse lg:flex-row py-8 justify-between lg:text-left"
+      <div className="about flex items-center min-h-screen   bg-white" id="about">
+        <div className="flex flex-col-reverse lg:flex-row  justify-between lg:text-left"
           data-aos="fade-up">
           <div className="lg:w-1/3 flex flex-col lg:mx-4 justify-center">
             <img alt="card img" className="rounded-t float-right" src={introImg} />
           </div>
           <div
-            className="flex-col my-4 text-center lg:text-center lg:my-0 lg:justify-end w-full lg:w-2/3 px-8"
+            className="flex-col my-4  text-center lg:text-center lg:my-0 lg:justify-end w-full lg:w-2/3 px-8"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
