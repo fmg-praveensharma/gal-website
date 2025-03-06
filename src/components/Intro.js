@@ -1,28 +1,26 @@
 import React from "react";
 import img from "../images/ram4.png";
+import introImg from "../images/IntroImage.png"
 import { Link } from "react-router-dom";
 
 const Intro = () => {
   return (
     <>
       <div className="about m-auto p-2 md:p-12 h-5/6 bg-white" id="about">
-        <div
-          className="flex flex-col-reverse lg:flex-row py-8 justify-between lg:text-left"
-          data-aos="fade-up"
-        >
-          <div className="lg:w-1/2 flex flex-col lg:mx-4 justify-center">
-            <img alt="card img" className="rounded-t float-right" src={img} />
+        <div className="flex flex-col-reverse lg:flex-row py-8 justify-between lg:text-left"
+          data-aos="fade-up">
+          <div className="lg:w-1/3 flex flex-col lg:mx-4 justify-center">
+            <img alt="card img" className="rounded-t float-right" src={introImg} />
           </div>
           <div
-            className="flex-col my-4 text-center lg:text-left lg:my-0 lg:justify-end w-full lg:w-1/2 px-8"
+            className="flex-col my-4 text-center lg:text-center lg:my-0 lg:justify-end w-full lg:w-2/3 px-8"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <h3 className="text-4xl bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent font-bold">
-              Golden Arc Labs is a pioneering force in the realm of Virtual
-              Reality (VR), dedicated to pushing the boundaries of immersive
-              technology.
-            </h3>
+            <h1 className="text-9xl font-extrabold font-[Poppins,sans-serif]">
+              <span className="text-white">ABOUT</span>
+              <span className="text-violet-400"> US</span>
+            </h1>
             <div>
               <p
                 className="my-3 text-xl font-semibold tracking-tight mb-5 
