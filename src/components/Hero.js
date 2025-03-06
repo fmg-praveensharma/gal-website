@@ -2,15 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "../components/Navbar/NavBar";
 import heroImg from "../images/VRImage.png";
-import logo from "../images/logo.png"
+import logo from "../images/logo.png";
 import Button from "./Button";
 import { FaSearch } from "react-icons/fa";
-
 
 const Hero = () => {
   return (
     <>
-
       <div className="hero" id="hero">
         <div>
           <NavBar />
@@ -30,34 +28,33 @@ const Hero = () => {
               data-aos-delay="200"
             >
               {/* Large Centered Text */}
-              <div className=" basis-2/3 w-full flex justify-start items-end pb-8">
-                <h1 className="text-9xl font-extrabold font-[Poppins,sans-serif]">
+              <div className=" basis-2/3 w-full flex justify-center lg:justify-start items-end pb-8">
+                <h1 className="text-7xl lg:text-9xl font-extrabold font-[Poppins,sans-serif]">
                   <span className="text-white">VIRTUAL</span> <br />
                   <span className="text-violet-400">REALITY</span>
                 </h1>
               </div>
 
-
               {/* Search Bar */}
-              <div className=" basis-1/3 w-full flex justify-start items-center ">
-                {/* <input
-                  type="text"
-                  placeholder="Search..."
-                  className="w-full pl-12 pt-6 text-lg text-black rounded-full focus:outline-none shadow-lg"
-                /> */}
-                <div className="bg-white rounded-full lg:px-10 lg:py-3 lg:gap-x-36 lg:flex lg:flex-row lg:justify-center ">
-                  <div className="text-black  text-2xl">www.goldenarclabs.com</div>
-                  <div className=" flex justify-center items-center">
-                    <FaSearch className=" text-blue-500 text-2xl" />
+              <div className="basis-1/3 w-full flex justify-center lg:justify-start items-center">
+                <div className="bg-white rounded-full px-10 py-3 flex lflex-row items-center">
+                  {/* Fixed-width container for animated text */}
+                  <div className="overflow-hidden whitespace-nowrap">
+                    <span className="text-black text-lg lg:text-2xl font-mono animate-typing inline-block">
+                      www.goldenarclabs.com
+                    </span>
+                  </div>
+
+                  {/* Search icon in a separate fixed-width div */}
+                  <div className="flex justify-center items-center ml-4 ">
+                    <FaSearch className="text-blue-500  text-xl lg:text-2xl" />
                   </div>
                 </div>
-
-
               </div>
             </div>
 
             <div
-              className="flex justify-center w-full  lg:w-1/2"
+              className="flex justify-center w-full  lg:w-1/2 mt-8"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
