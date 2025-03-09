@@ -21,8 +21,8 @@ const ImpactVR = () => {
             data-aos-delay="500"
           >
             <h1 className="text-9xl font-extrabold font-[Poppins,sans-serif]">
-              <span className="text-white">IMPACT OF</span><br />
-              <span className="text-violet-400">VR</span>
+              <span className="text-white">IMPACT OF</span>
+              <span className="text-violet-400"> VR</span>
             </h1>
             <div>
               <p

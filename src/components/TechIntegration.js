@@ -13,7 +13,7 @@ const TechIntegration = () => {
         <div className=" flex flex-col-reverse lg:flex-row  justify-between lg:text-left"
           data-aos="fade-up">
           {/* Left div */}
-          <div className=" flex-col my-4 lg:my-0 lg:justify-end w-full lg:w-2/3 p-40"
+          <div className="flex-col lg:w-2/3 lg:ml-14"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
@@ -50,7 +50,7 @@ const TechIntegration = () => {
             </div>
           </div>
           {/* Right div */}
-          <div className=" lg:w-1/3 flex flex-col lg:mx-4 justify-center p-14">
+          <div className="lg:w-1/3 flex flex-col lg:mx-4 justify-center p-4">
             <img
               alt="card img"
               className="rounded-t float-right"
