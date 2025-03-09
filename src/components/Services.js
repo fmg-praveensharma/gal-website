@@ -12,7 +12,7 @@ const Services = () => {
       <div data-aos="" className=" mt-10 flex justify-between">
         {/* Left div */}
         <div className="my-4 py-4">
-          <h2 className="my-2 text-center text-3xl bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent mb-4 uppercase font-bold">
+          <h2 className="my-2 text-center text-3xl bg-gradient-to-r from-violet-300 to-violet-600 bg-clip-text text-transparent mb-4 uppercase font-bold">
             services
           </h2>
           <h2 className="mt-4 mx-12 text-center text-xl lg:text-2xl font-semibold text-white">

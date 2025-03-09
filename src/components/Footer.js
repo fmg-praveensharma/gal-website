@@ -11,8 +11,8 @@ const Footer = () => {
           <div className="grid sm:grid-cols-12 gap-5 py-8 md:py-12 lg:ml-11">
             {/* 1st block */}
             <div className="col-span-12 lg:col-span-4">
-              <div className="box-border border-b-4 border-yellow-600 p-8 bg-gray-800 text-white text-center rounded-lg xl:w-80 mx-auto">
-                <h3 className="font-bold text-2xl bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent mb-4">
+              <div className="box-border border-b-4 border-violet-600 p-8 bg-gray-800 text-white text-center rounded-lg xl:w-80 mx-auto">
+                <h3 className="font-bold text-2xl bg-gradient-to-r from-violet-300 via-violet-500 to-violet-700 bg-clip-text text-transparent mb-4">
                   Golden Arc Labs
                 </h3>
                 <div className="text-md font-medium text-white">
@@ -26,14 +26,14 @@ const Footer = () => {
 
             {/* 2nd block */}
             <div className="col-span-6 md:col-span-6 lg:col-span-1 ml-7 mx-auto">
-              <h6 className="bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent font-bold text-xl mb-4">
+              <h6 className="bg-gradient-to-r from-violet-300 via-violet-500 to-violet-700 bg-clip-text text-transparent font-bold text-xl mb-4">
                 LINKS
               </h6>
               <ul className="text-md">
                 <li className="mb-2">
                   <HashLink
                     to="#about"
-                    className="text-white hover:text-yellow-500 hover:tracking-wider transition duration-250 ease-in-out"
+                    className="text-white hover:text-violet-400 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     About
                   </HashLink>
@@ -41,7 +41,7 @@ const Footer = () => {
                 <li className="mb-2">
                   <HashLink
                     to="#services"
-                    className="text-white hover:text-yellow-500 hover:tracking-wider transition duration-250 ease-in-out"
+                    className="text-white hover:text-violet-400 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Services
                   </HashLink>
@@ -49,7 +49,7 @@ const Footer = () => {
                 <li className="mb-2">
                   <HashLink
                     to="/contact/#contact"
-                    className="text-white hover:text-yellow-500 hover:tracking-wider transition duration-250 ease-in-out"
+                    className="text-white hover:text-violet-400 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Contact
                   </HashLink>
@@ -59,14 +59,14 @@ const Footer = () => {
 
             {/* 3rd block */}
             <div className="col-span-6 md:col-span-6 lg:col-span-4 mx-auto">
-              <h6 className="bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent font-bold text-xl mb-4">
+              <h6 className="bg-gradient-to-r from-violet-300 via-violet-500 to-violet-700 bg-clip-text text-transparent font-bold text-xl mb-4">
                 OUR SERVICES
               </h6>
               <ul className="text-md">
                 <li className="mb-2">
                   <Link
                     to="#"
-                    className="text-white hover:text-yellow-500 hover:tracking-wider transition duration-250 ease-in-out"
+                    className="text-white hover:text-violet-400 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     VR Content Creation
                   </Link>
@@ -74,7 +74,7 @@ const Footer = () => {
                 <li className="mb-2">
                   <Link
                     to="#"
-                    className="text-white hover:text-yellow-500 hover:tracking-wider transition duration-250 ease-in-out"
+                    className="text-white hover:text-violet-400 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Virtual Commerce Solutions
                   </Link>
@@ -82,7 +82,7 @@ const Footer = () => {
                 <li className="mb-2">
                   <Link
                     to="#"
-                    className="text-white hover:text-yellow-500 hover:tracking-wider transition duration-250 ease-in-out"
+                    className="text-white hover:text-violet-400 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Interactive Simulations
                   </Link>
@@ -90,7 +90,7 @@ const Footer = () => {
                 <li className="mb-2">
                   <Link
                     to="#"
-                    className="text-white hover:text-yellow-500 hover:tracking-wider transition duration-250 ease-in-out"
+                    className="text-white hover:text-violet-400 hover:tracking-wider transition duration-250 ease-in-out"
                   >
                     Immersive Brand Experiences
                   </Link>
@@ -100,11 +100,11 @@ const Footer = () => {
 
             {/* 4th block */}
             <div className="col-span-12 text-center mx-auto lg:col-span-3 font-bold uppercase text-blue-900">
-              <div className="text-xl bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent font-bold text-xl mb-4 mb-6">
+              <div className="text-xl bg-gradient-to-r from-violet-300 via-violet-500 to-violet-700 bg-clip-text text-transparent font-bold">
                 Social Media Links.
               </div>
 
-              <div className="text-md bg-gradient-to-r from-yellow-300 via-amber-500 to-yellow-600 bg-clip-text text-transparent font-bold text-xl mb-4 mb-6">
+              <div className="text-md bg-gradient-to-r from-violet-300 via-violet-500 to-violet-700 bg-clip-text text-transparent font-bold text-xl">
                 Follow us on social media.
               </div>
               <div className="mx-auto text-center mt-2">
