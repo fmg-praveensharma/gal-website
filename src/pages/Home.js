@@ -8,6 +8,7 @@ import Portfolio from "../components/Portfolio";
 import Services from "../components/Services";
 import TechIntegration from "../components/TechIntegration";
 import ImpactVR from "../components/ImpactVR";
+import FutureOutLook from "../components/FutureOutLook";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Services />
       <TechIntegration />
       <ImpactVR />
+      <FutureOutLook />
       {/* <Portfolio /> */}
       {/* <Clients /> */}
       <Cta />
