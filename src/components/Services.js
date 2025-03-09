@@ -12,7 +12,7 @@ const Services = () => {
       {/* Main div container */}
       <div data-aos="" className=" mt-10 flex justify-between">
         {/* Left div */}
-        <div className="my-4 py-4 border-2">
+        <div className="my-4 py-4">
           <div>
             <h2 className="my-2 text-center text-3xl bg-gradient-to-r from-violet-300 to-violet-600 bg-clip-text text-transparent mb-4 uppercase font-bold">
               services
@@ -28,7 +28,7 @@ const Services = () => {
           </div>
         </div>
         {/* Right div */}
-        <div className="border-2 px-12 w-2/3 my-4 flex flex-col justify-center" data-aos="fade-down" data-aos-delay="600">
+        <div className="px-12 w-2/3 my-4 flex flex-col justify-center" data-aos="fade-down" data-aos-delay="600">
           <div className="flex flex-row justify-start items-center gap-x-5 py-2">
             <img
               alt="card img"
