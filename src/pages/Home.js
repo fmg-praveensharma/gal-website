@@ -7,6 +7,7 @@ import Intro from "../components/Intro";
 import Portfolio from "../components/Portfolio";
 import Services from "../components/Services";
 import TechIntegration from "../components/TechIntegration";
+import ImpactVR from "../components/ImpactVR";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Intro />
       <Services />
       <TechIntegration />
+      <ImpactVR />
       {/* <Portfolio /> */}
       {/* <Clients /> */}
       <Cta />
