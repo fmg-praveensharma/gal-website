@@ -6,18 +6,21 @@ import { Link } from "react-router-dom";
 const Intro = () => {
   return (
     <>
+      {/* Parent div */}
       <div className="about flex items-center min-h-screen   bg-white" id="about">
+        {/* Child div */}
         <div className="flex flex-col-reverse lg:flex-row  justify-between lg:text-left"
           data-aos="fade-up">
-          <div className="lg:w-1/3 flex flex-col lg:mx-4 justify-center">
+          {/* Left div */}
+          <div className=" lg:w-1/3 flex flex-col lg:mx-4 justify-center">
             <img
               alt="card img"
               className="rounded-t float-right"
               src={introImg}
             />
           </div>
-          <div
-            className="flex-col my-4  text-center lg:text-center lg:my-0 lg:justify-end w-full lg:w-2/3 px-8"
+          {/* Right div */}
+          <div className=" flex-col my-4 lg:my-0 lg:justify-end w-full lg:w-2/3 lg:pl-24 pr-24"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
@@ -55,10 +58,10 @@ const Intro = () => {
             <Link
               to="/contact"
               className="relative text-gray-500 font-mono bg-white inline-flex items-center justify-center w-full px-6 py-2 my-4 text-lg 
-  shadow-xl rounded-2xl sm:w-auto sm:mb-0 group border border-violet-500
-  transition-all duration-300 ease-in-out 
-  hover:bg-gradient-to-r hover:from-violet-500 hover:via-white hover:to-violet-700
-  bg-clip-text hover:text-transparent hover:shadow-lg hover:shadow-violet-500/50"
+                shadow-xl rounded-2xl sm:w-auto sm:mb-0 group border border-violet-500
+                transition-all duration-300 ease-in-out 
+                hover:bg-gradient-to-r hover:from-violet-500 hover:via-white hover:to-violet-700
+                bg-clip-text hover:text-transparent hover:shadow-lg hover:shadow-violet-500/50"
             >
               Contact us
               <svg

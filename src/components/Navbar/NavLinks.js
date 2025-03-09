@@ -11,11 +11,10 @@ const NavLinks = () => {
               transition-all duration-300 ease-in-out rounded-2xl py-2
               hover:bg-gradient-to-r hover:from-purple-700 hover:via-white hover:to-violet-800 
               bg-clip-text hover:text-transparent hover:shadow-lg hover:shadow-purple-500/50
-              ${
-                activeLink === "/#about"
-                  ? "border-gray-800"
-                  : "border-transparent"
-              }`}
+              ${activeLink === "/#"
+            ? "border-gray-800"
+            : "border-transparent"
+          }`}
         smooth
         to="/#"
         onClick={() => setActiveLink("/#")}
@@ -28,11 +27,10 @@ const NavLinks = () => {
               transition-all duration-300 ease-in-out rounded-2xl py-2
               hover:bg-gradient-to-r hover:from-purple-700 hover:via-white hover:to-violet-800 
               bg-clip-text hover:text-transparent hover:shadow-lg hover:shadow-purple-500/50
-              ${
-                activeLink === "/#about"
-                  ? "border-gray-800"
-                  : "border-transparent"
-              }`}
+              ${activeLink === "/#about"
+            ? "border-gray-800"
+            : "border-transparent"
+          }`}
         smooth
         to="/#about"
         onClick={() => setActiveLink("/#about")}
@@ -45,11 +43,10 @@ const NavLinks = () => {
               transition-all duration-300 ease-in-out rounded-2xl py-2
               hover:bg-gradient-to-r hover:from-purple-700 hover:via-white hover:to-violet-800 
               bg-clip-text hover:text-transparent hover:shadow-lg hover:shadow-purple-500/50
-              ${
-                activeLink === "/#services"
-                  ? "border-gray-800"
-                  : "border-transparent"
-              }`}
+              ${activeLink === "/#services"
+            ? "border-gray-800"
+            : "border-transparent"
+          }`}
         smooth
         to="/#services"
         onClick={() => setActiveLink("/#services")}
@@ -62,11 +59,10 @@ const NavLinks = () => {
               transition-all duration-300 ease-in-out rounded-2xl py-2
               hover:bg-gradient-to-r hover:from-purple-700 hover:via-white hover:to-violet-800 
               bg-clip-text hover:text-transparent hover:shadow-lg hover:shadow-purple-500/50
-              ${
-                activeLink === "/contact#contact"
-                  ? "border-gray-800"
-                  : "border-transparent"
-              }`}
+              ${activeLink === "/contact#contact"
+            ? "border-gray-800"
+            : "border-transparent"
+          }`}
         smooth
         to="/contact#contact"
         onClick={() => setActiveLink("/contact#contact")}
