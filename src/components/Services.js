@@ -4,6 +4,7 @@ import img2 from "../images/ram6.jpg";
 import img3 from "../images/ram1.jpg";
 import img4 from "../images/ram2.jpg";
 import logoImage from "../images/logo.png";
+import mobileImg from "../images/Mobile.png"
 
 const Services = () => {
   return (
@@ -11,16 +12,23 @@ const Services = () => {
       {/* Main div container */}
       <div data-aos="" className=" mt-10 flex justify-between">
         {/* Left div */}
-        <div className="my-4 py-4">
-          <h2 className="my-2 text-center text-3xl bg-gradient-to-r from-violet-300 to-violet-600 bg-clip-text text-transparent mb-4 uppercase font-bold">
-            services
-          </h2>
-          <h2 className="mt-4 mx-12 text-center text-xl lg:text-2xl font-semibold text-white">
-            We are deeply committed to the growth and success of our clients.
-          </h2>
+        <div className="my-4 py-4 border-2">
+          <div>
+            <h2 className="my-2 text-center text-3xl bg-gradient-to-r from-violet-300 to-violet-600 bg-clip-text text-transparent mb-4 uppercase font-bold">
+              services
+            </h2>
+
+          </div>
+          <div className="flex justify-center">
+            <img
+              alt="card img"
+              className="rounded-t"
+              src={mobileImg}
+            />
+          </div>
         </div>
         {/* Right div */}
-        <div className="px-12 w-2/3 my-4 flex flex-col justify-center" data-aos="fade-down" data-aos-delay="600">
+        <div className="border-2 px-12 w-2/3 my-4 flex flex-col justify-center" data-aos="fade-down" data-aos-delay="600">
           <div className="flex flex-row justify-start items-center gap-x-5 py-2">
             <img
               alt="card img"
