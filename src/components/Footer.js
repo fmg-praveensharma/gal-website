@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
+const servicesLinks = [
+  { label: "WEB & SaaS Development", path: "/services/webdev" },
+  { label: "AR & VR Development", path: "/services/arvr" },
+  { label: "Metaverse", path: "/services/metaverse" },
+  { label: "Internet of Things(IOT)", path: "/services/iot" },
+  { label: "SEO & DIGITAL MARKETING", path: "/services/seo" },
+];
+
   return (
     <>
       <footer>
@@ -54,6 +62,14 @@ const Footer = () => {
                     Contact
                   </HashLink>
                 </li>
+                <li className="mb-2">
+                  <HashLink
+                    to="/careers/#careersMain"
+                    className="text-white hover:text-violet-400 hover:tracking-wider transition duration-250 ease-in-out"
+                  >
+                    Careers
+                  </HashLink>
+                </li>
               </ul>
             </div>
 
@@ -63,7 +79,17 @@ const Footer = () => {
                 OUR SERVICES
               </h6>
               <ul className="text-md">
-                <li className="mb-2">
+                {servicesLinks.map((service, index) => (
+                  <li key={index} className="mb-2">
+                    <Link
+                      to={service.path}
+                      className="text-white hover:text-violet-400 hover:tracking-wider transition duration-250 ease-in-out"
+                    >
+                      {service.label}
+                    </Link>
+                  </li>
+                ))}
+                {/* <li className="mb-2">
                   <Link
                     to="#"
                     className="text-white hover:text-violet-400 hover:tracking-wider transition duration-250 ease-in-out"
@@ -71,6 +97,7 @@ const Footer = () => {
                     VR Content Creation
                   </Link>
                 </li>
+
                 <li className="mb-2">
                   <Link
                     to="#"
@@ -94,7 +121,7 @@ const Footer = () => {
                   >
                     Immersive Brand Experiences
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 

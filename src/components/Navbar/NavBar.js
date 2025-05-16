@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${
+      className={`sticky top-0 w-full z-30 transition duration-300 ease-in-out ${
         !top && "bg-black shadow-lg"
       }`}
     >
@@ -39,7 +39,7 @@ const NavBar = () => {
             </div>
           </HashLink>
         </div>
-        <div className="group flex flex-col items-center">
+        <div className=" flex flex-col items-center gap-2">
           <button
             className="p-2 rounded-lg lg:hidden text-white"
             onClick={handleClick}
@@ -64,7 +64,7 @@ const NavBar = () => {
               )}
             </svg>
           </button>
-          <div className="hidden space-x-6 lg:inline-block p-5">
+          <div className=" hidden space-x-6 lg:inline-block p-5">
             <NavLinks />
           </div>
 

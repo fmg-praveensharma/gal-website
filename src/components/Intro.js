@@ -7,12 +7,17 @@ const Intro = () => {
   return (
     <>
       {/* Parent div */}
-      <div className="about flex items-center min-h-screen   bg-white" id="about">
+      <div
+        className="about flex items-center min-h-screen   bg-white"
+        id="about"
+      >
         {/* Child div */}
-        <div className="flex flex-col-reverse lg:flex-row  justify-between lg:text-left"
-          data-aos="fade-up">
+        <div
+          className="flex flex-col-reverse lg:flex-row  justify-between lg:text-left"
+          data-aos="fade-up"
+        >
           {/* Left div */}
-          <div className=" lg:w-1/3 flex flex-col lg:mx-4 justify-center">
+          <div className="w-2/3 lg:w-1/3 mx-auto lg:mx-4 ">
             <img
               alt="card img"
               className="rounded-t float-right"
@@ -20,11 +25,13 @@ const Intro = () => {
             />
           </div>
           {/* Right div */}
-          <div className=" flex-col my-4 lg:my-0 lg:justify-end w-full lg:w-2/3 lg:pl-24 pr-24"
+          <div
+            className="max-w-[80vw] lg:w-2/3 flex flex-col lg:mx-4 justify-center p-4 m-auto"
+            // className="flex-col my-4 lg:my-0 lg:justify-end w-full lg:w-2/3 lg:pl-24 pr-24"
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <h1 className="text-9xl font-extrabold font-[Poppins,sans-serif]">
+            <h1 className=" text-6xl lg:text-9xl font-extrabold font-[Poppins,sans-serif] text-center md:text-left">
               <span className="text-white">ABOUT</span>
               <span className="text-violet-400"> US</span>
             </h1>
@@ -32,7 +39,7 @@ const Intro = () => {
               <p
                 className="my-3 text-xl font-semibold tracking-tight mb-5 
                 bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 
-                bg-clip-text text-transparent"
+                bg-clip-text text-transparent text-center md:text-left"
               >
                 Founded on the belief that VR has the power to revolutionize how
                 individuals and businesses interact with digital content, Studio
@@ -48,7 +55,7 @@ const Intro = () => {
               <p
                 className="my-3 text-xl font-semibold tracking-tight mb-5 
                 bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 
-                bg-clip-text text-transparent"
+                bg-clip-text text-transparent text-center md:text-left"
               >
                 We take responsibility for building custom software solutions
                 that caters for automation of your business processes and
