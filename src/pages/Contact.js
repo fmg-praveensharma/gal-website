@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import NavBar from "../components/Navbar/NavBar";
-import Footer from "../components/Footer";
-import { useDocTitle } from "../components/CustomHook";
 import Notiflix from "notiflix";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
+import { useDocTitle } from "../components/CustomHook";
 
 const Contact = () => {
   useDocTitle("MLD | Molad e Konsult - Send us a message");
@@ -12,6 +12,12 @@ const Contact = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate("/");
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -20,34 +26,69 @@ const Contact = () => {
       last_name: lastName,
       email: email,
       phone_number: phone,
-      message: message,
+      message: `
+      Name: ${firstName} ${lastName}
+      Email: ${email},
+      Phone: ${phone}
+      Message: ${message}
+      `,
     };
 
-    console.log("Message Sent:", JSON.stringify(messageData, null, 2));
-    Notiflix.Notify.success("Message has been sent successfully!");
+    // EmailJS service
+    emailjs
+      .send(
+        "service_izb5f2e",
+        "template_yiph3h7",
+        messageData,
+        // "user_0Xk1r7J9Zc3Y1G5Q0W2eE"
+        "a_yS8_PNnnnEHohPT"
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully!", response);
+          Notiflix.Notify.success("Message has been sent successfully!");
+          console.log("Message Sent:", JSON.stringify(messageData, null, 2));
 
-    setEmail("");
-    setPhone("");
-    setMessage("");
-    setLastName("");
-    setFirstName("");
+          setEmail("");
+          setPhone("");
+          setMessage("");
+          setLastName("");
+          setFirstName("");
+        },
+        (error) => {
+          console.error("Error sending email:", error);
+          Notiflix.Notify.failure("Failed to send message. Please try again.");
+        }
+      );
   };
 
   return (
     <>
-      <NavBar />
       <div
         id="contact"
-        className="contact flex justify-center items-center mt-8 w-full bg-white py-12 lg:py-24 "
+        className="contact flex justify-center items-center w-full bg-white py-12 lg:py-24 "
       >
         <div
-          className="container mx-auto my-8 px-4 lg:px-20"
+          className="container mx-auto my-8 px-4 lg:px-20 relative"
           data-aos="zoom-in"
         >
+          <button
+            onClick={handleBack}
+            className="absolute top-6 right-6 lg:right-24 p-2 cursor-pointer bg-white rounded-full shadow-lg hover:shadow-xl transition duration-300 z-50 text-black font-bold text-lg w-12 h-12"
+            style={{
+              fontWeight: 900,
+              fontSize: "20px",
+              scale: 4.5,
+              fontFamily: "cursive",
+            }}
+            type={"button"}
+          >
+            X
+          </button>
           <form onSubmit={sendEmail}>
-            <div className="w-full bg-[#ffffff20] p-8 my-4 md:px-12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
-              <h1 className="font-bold text-center lg:text-left uppercase text-4xl bg-gradient-to-r from-violet-300 via-violet-400 to-violet-600 bg-clip-text text-transparent mb-4">
-                We’d Love to Hear from You
+            <div className="w-full relative bg-[#ffffff20] p-8 my-4 md:px-12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+              <h1 className="font-bold text-center mt-6 lg:mt-0 lg:text-left uppercase text-4xl bg-gradient-to-r from-violet-300 via-violet-400 to-violet-600 bg-clip-text text-transparent mb-4">
+                We'd Love to Hear from You
               </h1>
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
                 <input

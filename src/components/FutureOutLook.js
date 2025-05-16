@@ -12,7 +12,7 @@ const FutureOutLook = () => {
         <div className=" flex flex-col-reverse lg:flex-row justify-between"
           data-aos="fade-up">
           {/* Left div */}
-          <div className="w-full flex flex-col justify-center p-20">
+          <div className="w-full flex flex-col justify-center px-20 pb-8">
             <img
               alt="card img"
               className="rounded-t float-right"
@@ -25,7 +25,7 @@ const FutureOutLook = () => {
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <h1 className="text-9xl font-extrabold font-[Poppins,sans-serif]">
+            <h1 className="text-5xl lg:text-9xl font-extrabold font-[Poppins,sans-serif]">
               <span className="text-white">FUTURE</span><br />
               <span className="text-violet-400">OUTLOOK</span>
             </h1>
@@ -47,7 +47,7 @@ const FutureOutLook = () => {
 
             <div>
               <p
-                className="my-3 text-xl font-semibold tracking-tight mb-5 
+                className="my-3 text-xl font-semibold tracking-tight -mb-5 lg:mb-5 
                 bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 
                 bg-clip-text text-transparent text-left "
               >

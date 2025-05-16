@@ -22,7 +22,7 @@ const Home = () => {
       {/* <Portfolio /> */}
       {/* <Clients /> */}
       <Cta />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

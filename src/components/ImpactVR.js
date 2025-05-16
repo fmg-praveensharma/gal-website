@@ -20,7 +20,7 @@ const ImpactVR = () => {
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <h1 className="text-9xl font-extrabold font-[Poppins,sans-serif]">
+            <h1 className="text-6xl lg:text-9xl text-center lg:text-left font-extrabold font-[Poppins,sans-serif]">
               <span className="text-white">IMPACT OF</span>
               <span className="text-violet-400"> VR</span>
             </h1>
