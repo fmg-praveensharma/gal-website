@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
-const servicesLinks = [
-  { label: "WEB & SaaS Development", path: "/services/webdev" },
-  { label: "AR & VR Development", path: "/services/arvr" },
-  { label: "Metaverse", path: "/services/metaverse" },
-  { label: "Internet of Things(IOT)", path: "/services/iot" },
-  { label: "SEO & DIGITAL MARKETING", path: "/services/seo" },
-];
+  const servicesLinks = [
+    { label: "WEB & SaaS Development", path: "/services/webdev" },
+    { label: "AR & VR Development", path: "/services/arvr" },
+    { label: "Metaverse", path: "/services/metaverse" },
+    { label: "Internet of Things(IOT)", path: "/services/iot" },
+    { label: "SEO & DIGITAL MARKETING", path: "/services/seo" },
+  ];
 
   return (
     <>
@@ -37,7 +37,7 @@ const servicesLinks = [
               <h6 className="bg-gradient-to-r from-violet-300 via-violet-500 to-violet-700 bg-clip-text text-transparent font-bold text-xl mb-4">
                 LINKS
               </h6>
-              <ul className="text-md">
+              <ul className="text-md space-y-4">
                 <li className="mb-2">
                   <HashLink
                     to="#about"
@@ -78,7 +78,7 @@ const servicesLinks = [
               <h6 className="bg-gradient-to-r from-violet-300 via-violet-500 to-violet-700 bg-clip-text text-transparent font-bold text-xl mb-4">
                 OUR SERVICES
               </h6>
-              <ul className="text-md">
+              <ul className="text-md space-y-4">
                 {servicesLinks.map((service, index) => (
                   <li key={index} className="mb-2">
                     <Link
@@ -137,8 +137,9 @@ const servicesLinks = [
               <div className="mx-auto text-center mt-2">
                 <ul className="flex justify-center mb-4 md:mb-0">
                   <li>
-                    <Link
-                      to="#"
+                    <a
+                      href="#"
+                      target="_blank"
                       className="flex justify-center items-center text-blue-900 hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                       aria-label="Twitter"
                     >
@@ -149,11 +150,12 @@ const servicesLinks = [
                       >
                         <path d="M24 11.5c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H8c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4c.7-.5 1.3-1.1 1.7-1.8z" />
                       </svg>
-                    </Link>
+                    </a>
                   </li>
                   <li className="ml-4">
-                    <Link
-                      to="#"
+                    <a
+                      href="https://www.facebook.com/home.php"
+                      target="_blank"
                       className="flex justify-center items-center text-blue-900 hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                       aria-label="Facebook"
                     >
@@ -164,7 +166,30 @@ const servicesLinks = [
                       >
                         <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
                       </svg>
-                    </Link>
+                    </a>
+                  </li>
+                  <li className="ml-4">
+                    <a
+                      href="https://www.linkedin.com/in/dev-subhankar-sarkar/"
+                      target="_blank"
+                      className="flex justify-center items-center text-blue-900 hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
+                      aria-label="LinkedIn"
+                    >
+                      <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
+                        <svg
+                          className="w-5 h-5"
+                          viewBox="0 0 34 34"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <title>LinkedIn</title>
+                          <path
+                            fill="#0077B5"
+                            d="M34,34H27.3V23c0-2.6,0-6-3.7-6s-4.3,2.9-4.3,5.9V34h-6.7V11.3h6.4v3.1h0.1c0.9-1.7,3-3.4,6.2-3.4
+         c6.6,0,7.8,4.4,7.8,10.2V34z M4,8.9C1.8,8.9,0,7.1,0,4.9S1.8,1,4,1s4,1.8,4,3.9S6.2,8.9,4,8.9z M0.7,34h6.7V11.3H0.7V34z"
+                          />
+                        </svg>
+                      </div>
+                    </a>
                   </li>
                 </ul>
               </div>

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Seo = () => {
   let capabilities = [
@@ -42,7 +43,7 @@ const Seo = () => {
   ];
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
   return (
@@ -114,12 +115,12 @@ const Seo = () => {
           Partner with GoldenArcLabs to boost rankings, capture leads, and grow
           revenue organically.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="bg-white text-blue-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition text-2xl"
         >
           Get a Free SEO Audit NOW
-        </a>
+        </Link>
       </section>
     </div>
   );
