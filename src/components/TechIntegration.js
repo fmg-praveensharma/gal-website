@@ -23,11 +23,13 @@ const TechIntegration = () => {
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <h1 className="text-5xl lg:text-9xl text-center lg:text-left font-extrabold font-[Poppins,sans-serif]">
-              <span className="text-white">TECHNOLOGY</span>
-              <br />
-              <span className="text-violet-400">INTEGRATION</span>
-            </h1>
+            <div className="  bg-gradient-to-r from-indigo-600 via-violet-900 to-fuchsia-900 pl-16 -ml-16">
+              <h1 className="text-5xl lg:text-9xl text-center lg:text-left font-extrabold font-[Poppins,sans-serif] pr-8 ">
+                <span className="text-white">TECHNOLOGY</span>
+                <br />
+                <span className="text-violet-400">INTEGRATION</span>
+              </h1>
+            </div>
             <div>
               <p
                 className="my-3 text-xl font-semibold tracking-tight mb-5 

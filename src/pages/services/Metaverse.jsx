@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Metaverse = () => {
   let capabilities = [
@@ -41,7 +42,7 @@ const Metaverse = () => {
     },
   ];
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
     <div className="min-h-screen max-w-[100vw]  m-auto">
@@ -112,12 +113,12 @@ const Metaverse = () => {
           Partner with GoldenArcLabs to launch your virtual world, NFT project,
           or gamified metaverse solution.
         </p>
-        <a
-          href="/contact"
-         className="bg-white text-blue-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition text-2xl"
+        <Link
+          to="/contact"
+          className="bg-white text-blue-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition text-2xl"
         >
           Start Your Metaverse Journey NOW
-        </a>
+        </Link>
       </section>
     </div>
   );

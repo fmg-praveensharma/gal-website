@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const ARVR = () => {
   let capabilities = [
@@ -30,7 +31,7 @@ const ARVR = () => {
   ];
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
 
   return (
@@ -103,12 +104,12 @@ const ARVR = () => {
         <p className="mb-8 text-xl md:text-2xl">
           Reach out to start your AR/VR journey with GoldenArcLabs
         </p>
-        <a
-          href="/contact"
-         className="bg-white text-blue-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition text-2xl"
+        <Link
+          to="/contact"
+          className="bg-white text-blue-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition text-2xl"
         >
           Let's make the Idea Real NOW.
-        </a>
+        </Link>
       </section>
     </div>
   );

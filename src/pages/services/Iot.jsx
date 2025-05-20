@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Iot = () => {
   let capabilities = [
@@ -41,7 +42,7 @@ const Iot = () => {
     },
   ];
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth' });
   }, []);
 
   return (
@@ -112,12 +113,12 @@ const Iot = () => {
         <p className="mb-8 text-xl md:text-2xl">
           Partner with GoldenArcLabs to launch your connected device ecosystem.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
          className="bg-white text-blue-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition text-2xl"
         >
           Start Your IoT Project NOW
-        </a>
+        </Link>
       </section>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const WebDev = () => {
   let capabilities = [
@@ -42,7 +43,7 @@ const WebDev = () => {
   ];
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
   return (
     <div className="min-h-screen max-w-[100vw]  m-auto">
@@ -112,12 +113,12 @@ const WebDev = () => {
           From APIs to production-ready platforms, GoldenArcLabs delivers
           complete SaaS engineering services.
         </p>
-        <a
-          href="/contact"
+        <Link
+          to="/contact"
           className="bg-white text-blue-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition text-2xl"
         >
           Start Building Today
-        </a>
+        </Link>
       </section>
     </div>
   );

@@ -38,14 +38,18 @@ const Hero = () => {
   const [fade, setFade] = useState(true);
 
   useEffect(() => {
+    let timer;
     const interval = setInterval(() => {
       setFade(false); // trigger fade out
-      setTimeout(() => {
+      timer = setTimeout(() => {
         setCurrentSlide((prev) => (prev + 1) % slides.length);
         setFade(true); // trigger fade in
-      }, 800); // short delay to allow fade-out before changing slide
+      }, 1000); // short delay to allow fade-out before changing slide
     }, 4000);
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timer);
+    };
   }, []);
 
   const { title1, title2, image } = slides[currentSlide];
@@ -53,7 +57,7 @@ const Hero = () => {
     <>
       <div className="hero" id="hero">
         <div
-          className="m-auto overflow-hidden mx-4 mt-8 lg:mt-4 p-2 md:p-12 h-5/6"
+          className="m-auto overflow-hidden mx-4  p-2 md:p-12 h-5/6"
           data-aos="zoom-in"
         >
           <div
