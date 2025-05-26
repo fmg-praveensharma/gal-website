@@ -37,11 +37,13 @@ const Contact = () => {
     // EmailJS service
     emailjs
       .send(
-        "service_izb5f2e",
-        "template_yiph3h7",
+        // "service_izb5f2e",
+        "service_3mvwt48", //service ID
+        // "template_yiph3h7",
+        "template_k1eddsl", //templete ID
         messageData,
-        // "user_0Xk1r7J9Zc3Y1G5Q0W2eE"
-        "a_yS8_PNnnnEHohPT"
+        // "a_yS8_PNnnnEHohPT"
+        "Stv3EmSezzeNEIvsX" //public key
       )
       .then(
         (response) => {
