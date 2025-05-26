@@ -24,7 +24,7 @@ const Footer = () => {
                   Golden Arc Labs
                 </h3>
                 <div className="text-md font-medium text-white">
-                  <h5></h5>
+                  {/* <h5></h5> */}
                   <p>Sector 70</p>
                   <p>Noida, Uttar Pradesh</p>
                   <p>India</p>
@@ -138,8 +138,9 @@ const Footer = () => {
                 <ul className="flex justify-center mb-4 md:mb-0">
                   <li>
                     <a
-                      href="#"
+                      href="https://x.com/"
                       target="_blank"
+                      rel="noreferrer"
                       className="flex justify-center items-center text-blue-900 hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                       aria-label="Twitter"
                     >
@@ -155,6 +156,7 @@ const Footer = () => {
                   <li className="ml-4">
                     <a
                       href="https://www.facebook.com/home.php"
+                      rel="noreferrer"
                       target="_blank"
                       className="flex justify-center items-center text-blue-900 hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                       aria-label="Facebook"
@@ -170,7 +172,8 @@ const Footer = () => {
                   </li>
                   <li className="ml-4">
                     <a
-                      href="https://www.linkedin.com/in/dev-subhankar-sarkar/"
+                      href="https://www.linkedin.com/"
+                      rel="noreferrer"
                       target="_blank"
                       className="flex justify-center items-center text-blue-900 hover:text-gray-500 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                       aria-label="LinkedIn"
