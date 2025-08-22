@@ -53,7 +53,7 @@ const Services = () => {
                   className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                   src={img2}
                 /> */}
-                   <video
+                <video
                   // className="absolute top-0 left-0 w-full h-full object-cover z-0"
                   className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                   src="/videos/vr.mp4"
@@ -78,7 +78,7 @@ const Services = () => {
                   className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                   src={img3}
                 /> */}
-                   <video
+                <video
                   // className="absolute top-0 left-0 w-full h-full object-cover z-0"
                   className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                   src="/videos/iot.mp4"
@@ -102,7 +102,7 @@ const Services = () => {
                   className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                   src={img4}
                 /> */}
-                   <video
+                <video
                   // className="absolute top-0 left-0 w-full h-full object-cover z-0"
                   className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out"
                   src="/videos/seo.mp4"
@@ -134,13 +134,13 @@ const Services = () => {
             className="w-[60%] h-full object-contain pr-[10%] pt-[5%]"
           />
           <div className="absolute top-[50%] w-[100%] h-[50%] flex flex-col justify-center items-center scale-98 lg:scale-110">
-      {/*
+            {/*
             bg-gradient-to-r from-indigo-600 via-violet-900 to-fuchsia-900 // div gradient
              <span className="text-7xl font-bold leading-[10rem]">SERVICES</span>
             <span className="text-7xl font-bold text-fuchsia-500">OFFERED</span>
              */}
 
-      <img
+            <img
               src={servicesOffered}
               alt="services offered"
               className="w-full h-[80%] object-cover"
@@ -148,8 +148,8 @@ const Services = () => {
           </div>
         </div>
 
-      {/* offer Box */}
-      <div className=" box-border w-[100%] lg:w-[60%] h-full gradientBlackTOBlueRotate p-10 lg:p-24">
+        {/* offer Box */}
+        <div className=" box-border w-[100%] lg:w-[60%] h-full gradientBlackTOBlueRotate p-10 lg:p-24">
           <div className="flex flex-row justify-start items-center gap-x-5 py-2 mb-5">
             <img
               alt="card img"
@@ -163,7 +163,7 @@ const Services = () => {
           <div className="autoGrid gap-5">
             <div className="bg-gradient-to-r from-blue-700 to-fuchsia-900 p-1  hover:scale-105 transition-transform duration-300 hover:cursor-pointer text-white">
               <div className="h-full min-h-[5rem] bg-black text-left p-5">
-                <h1 className="text-3xl  font-bold  min-h-[4rem] text-fuchsia-300">
+                <h1 className="text-3xl  font-bold  min-h-[4rem] bg-gradient-to-r from-blue-600 via-fuchsia-900 to-fuchsia-900 bg-clip-text text-transparent w-fit">
                   VR Content Creation:
                 </h1>
                 <h2 className="text-xl  min-h-[3rem] ">
@@ -173,7 +173,7 @@ const Services = () => {
             </div>
             <div className="bg-gradient-to-r from-blue-700 to-fuchsia-900 p-1  hover:scale-105 transition-transform duration-300 hover:cursor-pointer text-white">
               <div className="h-full min-h-[5rem] bg-black text-left p-5">
-                <h1 className="text-3xl  font-bold  min-h-[4rem] text-fuchsia-300">
+                <h1 className="text-3xl  font-bold  min-h-[4rem] bg-gradient-to-r from-blue-600 via-fuchsia-900 to-fuchsia-900 bg-clip-text text-transparent w-fit">
                   Interactive Simulations:
                 </h1>
                 <h2 className="text-xl  min-h-[3rem] ">
@@ -183,7 +183,7 @@ const Services = () => {
             </div>
             <div className="bg-gradient-to-r from-blue-700 to-fuchsia-900 p-1  hover:scale-105 transition-transform duration-300 hover:cursor-pointer text-white">
               <div className="h-full min-h-[5rem] bg-black text-left p-5">
-                <h1 className="text-3xl  font-bold  min-h-[4rem] text-fuchsia-300">
+                <h1 className="text-3xl  font-bold  min-h-[4rem] bg-gradient-to-r from-blue-600 via-fuchsia-900 to-fuchsia-900 bg-clip-text text-transparent w-fit">
                   Virtual Commerce Solutions:
                 </h1>
                 <h2 className="text-xl  min-h-[3rem] ">
@@ -194,7 +194,7 @@ const Services = () => {
             </div>
             <div className="bg-gradient-to-r from-blue-700 to-fuchsia-900 p-1  hover:scale-105 transition-transform duration-300 hover:cursor-pointer text-white">
               <div className="h-full min-h-[5rem] bg-black text-left p-5">
-                <h1 className="text-3xl  font-bold  min-h-[4rem] text-fuchsia-300">
+                <h1 className="text-3xl  font-bold  min-h-[4rem] bg-gradient-to-r from-blue-600 via-fuchsia-900 to-fuchsia-900 bg-clip-text text-transparent w-fit">
                   Immersive Brand Experiences:
                 </h1>
                 <h2 className="text-xl  min-h-[3rem] ">

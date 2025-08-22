@@ -36,7 +36,6 @@ const ARVR = () => {
 
   return (
     <div className="min-h-screen max-w-[100vw]  m-auto">
-      {/* <Card/> */}
       <section className="relative h-screen w-full overflow-hidden rounded-t">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-0"

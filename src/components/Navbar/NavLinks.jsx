@@ -45,6 +45,24 @@ const NavLinks = ({ styles }) => {
         About
       </HashLink>
 
+      {/* About */}
+      <HashLink
+        className={`px-4 font-extrabold text-gray-500 font-mono border 
+          transition-all duration-300 ease-in-out rounded-2xl py-2
+          hover:bg-gradient-to-r hover:from-purple-700 hover:via-white hover:to-violet-800 
+          bg-clip-text hover:text-transparent hover:shadow-lg hover:shadow-purple-500/50
+          ${
+            activeLink === "/atal-lab"
+              ? "border-gray-800"
+              : "border-transparent"
+          }`}
+        smooth
+        to="/atal-lab"
+        onClick={() => setActiveLink("/atal-lab")}
+      >
+        ATAL Lab
+      </HashLink>
+
       {/* Services Dropdown */}
       {/* <div className="relative group inline ">
         <button

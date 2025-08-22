@@ -87,4 +87,14 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
+  /* display: flex;
+  width: 500px; */
+}
+
+@media (min-width: 1600px) {
+  .autoGrid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 4rem;
+  }
+
 }

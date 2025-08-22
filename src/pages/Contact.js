@@ -1,5 +1,5 @@
 import Notiflix from "notiflix";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
 import { useDocTitle } from "../components/CustomHook";
@@ -64,11 +64,15 @@ const Contact = () => {
       );
   };
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <>
       <div
         id="contact"
-        className="contact flex justify-center items-center w-full bg-white py-12 lg:py-24 "
+        className="contact flex justify-center items-center w-full bg-white py-0 lg:py-6 "
       >
         <div
           className="container mx-auto my-8 px-4 lg:px-20 relative"

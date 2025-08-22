@@ -17,6 +17,7 @@ import WebDev from "./pages/services/WebDev";
 import NavBar from "./components/Navbar/NavBar";
 import Footer from "./components/Footer";
 import CareersPage from "./pages/CareersPage";
+import ATALPage from "./pages/ATALPage";
 
 function App() {
   useEffect(() => {
@@ -45,6 +46,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} />
             <Route path="/careers" element={<CareersPage />} />
+            <Route path="/atal-lab" element={<ATALPage />} />
             {/* services Routes */}
             <Route path="/services/">
               <Route path="arvr" element={<ARVR />} />
